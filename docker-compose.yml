@@ -1,4 +1,4 @@
-version: "3"
+version: "2"
 services:
   coolq:
     image: richardchien/cqhttp
@@ -12,9 +12,8 @@ services:
       - 9000:9000
     volumes:
       - ./data/coolq:/home/user/coolq
+    env_file: ./conf/coolq/env
     environment:
-      - VNC_PASSWD=password
-      - COOLQ_ACCOUNT=12345678
       - CQHTTP_HOST=0.0.0.0
       - CQHTTP_PORT=5700
       - CQHTTP_POST_URL=http://ctb:8080
