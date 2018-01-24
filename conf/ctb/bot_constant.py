@@ -25,4 +25,3 @@ FORWARD_LIST = [
 ]
 SERVER_PIC_URL = ''
 CQ_ROOT = r'/coolq'
-JQ_MODE = False  # If you are using CoolQ AIr, change to False

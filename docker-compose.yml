@@ -20,7 +20,7 @@ services:
       - CQHTTP_POST_MESSAGE_FORMAT=array  # important!!
     restart: always
   ctb:
-    image: richardchien/ctb
+    image: tzhao11/ctb
     networks:
       net:
         aliases:
